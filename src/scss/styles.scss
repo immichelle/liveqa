@@ -1,0 +1,64 @@
+@font-face {
+    font-family: myFont;
+    src: url("../css/font/roboto-light.ttf");
+}
+body {
+    background-image: url("../assets/background.png");
+    background-position: 0 -150px;
+    font-family: myFont;
+    margin: 0;
+}
+nav {
+    padding-top: 20px;
+    width: 100%;
+    height: 5rem;
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0), rgb(0, 0, 0));
+    .nav-left {
+        float: left;
+        color: white;
+        .logo {
+            width: 50px
+        }
+    }
+    .nav-right {
+        float: right;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                display: inline-block;
+                padding-left: 10px;
+                a {
+                    // float: right;
+                    color: #f2f2f2;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    font-size: 17px;
+                    span {
+                        color: white;
+                    }
+                }
+                .active{
+                    // border-bottom: 1px solid red;
+                    text-align:center;
+  padding-bottom:5px;
+  background:
+    linear-gradient(
+      to left, 
+      rgba(92,7,52,1) 0%,
+      rgba(134,29,84,1) 12%,
+      rgba(255,93,177,1) 47%,
+      rgba(83,0,30,1) 100%
+    )
+    left 
+    bottom
+     
+    no-repeat; 
+  background-size:200% 2px ;
+                }
+            }
+        }
+    }
+}

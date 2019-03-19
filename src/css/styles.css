@@ -1,11 +1,10 @@
 @font-face {
   font-family: myFont;
   /* src: url("../css/font/roboto-light.ttf"); */
-  src: url("./css/font/roboto-light.ttf");
 }
 
 body {
-  background-image: url("./assets/background.png");
+  /* background-image: url("../assets/background.png"); */
   background-position: 0 -150px;
   font-family: myFont;
   margin: 0;
@@ -60,9 +59,5 @@ nav .nav-right ul li .active {
   background: linear-gradient(to left, #5c0734 0%, #861d54 12%, #ff5db1 47%, #53001e 100%) left bottom no-repeat;
   background-size: 200% 2px;
 }
-.box {
-  width: 300px;
-  height: 500px;
-  background-color: red;
-}
-/*# sourceMappingURL=App.css.map */
+
+/*# sourceMappingURL=styles.css.map */
