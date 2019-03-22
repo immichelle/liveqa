@@ -1,7 +1,7 @@
 const initState = {
-    topic: "",
-    name: "",
-    picture: ""
+   
+    sessionList: [],
+    sessionDetail:{}
 }
 
 const sessionReducer = (state= initState, action) => {
@@ -11,21 +11,10 @@ const sessionReducer = (state= initState, action) => {
                 ...state,
                 sessionList: action.payload
             }
-        case 'SEND_TEXT_INPUT':
+       
+        case 'FETCH_DETAIL':
         return {
-            ...state, textInput: action.payload
-        }
-        case 'GET_RESULT':
-        return {
-            ...state, companyList: action.payload
-        }
-        case 'FETCH_DELETE':
-        return {
-            ...state, companyList: state.companyList.filter((company) => company.id !== action.payload)
-        }
-        case 'GET_DETAIL':
-        return {
-            ...state, selectedCompany: action.payload
+            ...state, sessionDetail: action.payload
         }
         default:
             return state

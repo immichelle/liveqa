@@ -1,6 +1,5 @@
 @font-face {
   font-family: myFont;
-  /* src: url("../css/font/roboto-light.ttf"); */
   src: url("./css/font/roboto-light.ttf");
 }
 
@@ -21,10 +20,14 @@ nav {
 nav .nav-left {
   float: left;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav .nav-left .logo {
-  width: 50px;
+  width: 40px;
+  margin-right: 5px
 }
 
 nav .nav-right {
@@ -60,9 +63,44 @@ nav .nav-right ul li .active {
   background: linear-gradient(to left, #5c0734 0%, #861d54 12%, #ff5db1 47%, #53001e 100%) left bottom no-repeat;
   background-size: 200% 2px;
 }
-.box {
-  width: 300px;
-  height: 500px;
-  background-color: red;
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav .nav-left .logo {
+    width: 60px;
+    margin-right: 5px
+  }
+
+  nav .nav-right {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+
 }
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.box {
+  width: 400px;
+  height: 500px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border: 2px solid white;
+}
+
 /*# sourceMappingURL=App.css.map */
